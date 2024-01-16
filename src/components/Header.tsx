@@ -1,7 +1,13 @@
+import styled from "styled-components";
+
+const HeaderStyled = styled.div`
+    color: blue;
+`
+
 export const Header = () => {
     return(
-        <div>
+        <HeaderStyled>
             <p>Teste</p>
-        </div>
+        </HeaderStyled>
     )
 }
