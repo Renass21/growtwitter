@@ -1,13 +1,20 @@
+import Aside from './components/Aside'
+import { Container } from './components/Container'
 import { Header } from './components/Header'
-import './index.css'
+import Main from './components/Main'
+
+
+
+
 
 function App() {
-
-
   return (
     <>
+      <Container>
       <Header />
-        <p>Growtwitter</p>
+      <Main />  
+      <Aside />
+      </Container>
     </>
   )
 }
