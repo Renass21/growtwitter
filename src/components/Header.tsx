@@ -51,7 +51,7 @@ const HeaderStyled = styled.div`
     flex-direction: row;
     justify-content: center;
   }
-  img {    
+  .profile-photo {    
         width: 40px;
         border-radius: 50%;
     }
@@ -86,7 +86,7 @@ export const Header = () => {
       <div className="logout">
         <div className="logout-profile">
           <div>
-            <img src={perfil} alt="profile-photo" />
+            <img className="profile-photo" src={perfil} alt="profile-photo" />
           </div>
           <div className="logout-adress">
             <p>Renato dos Santos</p>
