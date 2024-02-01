@@ -16,11 +16,28 @@ export const Header = () => {
             <div >
                 <img src={logo} alt="logo-growtweeter" />
             </div>
-            
-            <nav id='left'>
-            
-            <p>left menu</p>
-          </nav>
+            <ul id='left'>
+                    <li>
+                    <a>Pagina incial</a>
+                    </li>
+                    <li>
+                    <a href="">Explorar</a>
+                    </li>
+                    <li>
+                    <a href="">Explorar</a>
+                    </li>    
+            </ul>
+            <button>Tweetar</button>
+            <div>
+                <div>
+                    <img src={logo} alt="profile-photo"/>
+                </div>
+                <div>
+                    <h1>Renato</h1>
+                    <span>@Renass21</span>
+                </div> 
+                <button>Sair</button>
+            </div>
         </HeaderStyled>
 
     )

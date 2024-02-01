@@ -1,20 +1,11 @@
-import Aside from './components/Aside'
-import { Container } from './components/Container'
-import { Header } from './components/Header'
-import Main from './components/Main'
-
-
-
+import { RouterProvider } from "react-router-dom"
+import { routes } from './routes/routes'
 
 
 function App() {
   return (
     <>
-      <Container>
-      <Header />
-      <Main />  
-      <Aside />
-      </Container>
+      <RouterProvider router={ routes }/>
     </>
   )
 }
