@@ -1,16 +1,15 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    height: 100%;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
     margin: auto;
 
-    background-color: azure;
-    max-width: 600px;
-
+    background-color: #061212;
     @media screen and (min-width: 600px) {
-      max-width: 800px;
+      max-width: 1000px;
     }
 
     /* #left {
