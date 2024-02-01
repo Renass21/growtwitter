@@ -10,8 +10,8 @@ const HeaderStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid white;
-  background-color: black;
+  border-right: 1px solid white;
+  background-color:#2F3136 ;
 
   ul {
     margin: 0;
@@ -40,11 +40,16 @@ const HeaderStyled = styled.div`
     max-width: 10.125rem;
     width: 100%;
   }
-  a:hover,
-  a:focus,
-  a:active {
+  a:hover {
     text-decoration: none;
+    color: #596af0;
+  }
+
+  li a {
+    font-weight: bolder;
+    font-size: 14px;
     color: #ffffff;
+
   }
   .logout-profile {
     display: flex;
@@ -78,7 +83,7 @@ export const Header = () => {
             <a href="">Explorar</a>
           </li>
           <li>
-            <a href="">Explorar</a>
+            <a href="">Perfil</a>
           </li>
         </ul>
         <button>Tweetar</button>

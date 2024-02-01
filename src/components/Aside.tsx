@@ -8,20 +8,26 @@ justify-content: start ;
 align-items: center;
 flex-direction: column;
 min-width: 180px;
-border: 2px solid white;
-background-color: black;
+border-left: 1px solid white;
+background-color: #2F3136;
 
-div {
+.trending-topics {
   display: flex;
   flex-direction: column;
   margin: 1rem;
   padding: 1rem;
   border: 1px solid darkgray;
-  background-color: darkgray;
+  background-color: #2F3136;
   border-radius: 1rem;
+}
+h3 {
+  font-weight: bolder;
+  font-size: 14px;
+  color: #ffffff;
 }
 ul {
   padding: 1rem;
+  color: #ffffff;
   list-style: none;
 }
 
@@ -29,10 +35,29 @@ li {
   padding: 0.5rem;
 }
 
+li p:hover {
+  color: #596af0;
+  text-decoration: none;
+}
+
+
 #mostrar-mais {
-  text-decoration: s;
   padding: 0;
   margin-bottom: 0;
+}
+a {
+  text-decoration: underline;
+  color: #1d37f0;
+}
+a:hover {
+  color: #596af0;
+  text-decoration: underline;
+}
+
+p {
+  font-weight: bolder;
+  font-size: 14px;
+  color: #ffffff;
 }
 `
 
@@ -40,23 +65,23 @@ li {
 const Aside = () => {
     return (
       <StyledAside>
-        <div>
+        <div className="trending-topics">
           <h3>O que está acontecendo?</h3>
           <ul>
           <li>
-            <p>Esportes - Há 1 min</p>
+            <span>Esportes - Há 1 min</span>
             <p>Assunto sobre Esportes</p>
           </li>
           <li>
-            <p>Assunto do momento em Brasil</p>
+            <span>Assunto do momento em Brasil</span>
             <p>Assunto em Brasil</p>
           </li>
           <li>
-            <p>Musica - Assunto do momento</p>
+            <span>Musica - Assunto do momento</span>
             <p>Assunto sobre Música</p>
           </li>
           <li>
-            <p>Cinema - Assunto do momento</p>
+            <span>Cinema - Assunto do momento</span>
             <p>Assunto sobre Filmes e Cinema</p>
           </li>
         </ul>

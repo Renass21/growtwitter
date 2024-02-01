@@ -6,11 +6,14 @@ import perfil from '../assets/MARCAÇAO_FOTO_PERFIL.svg'
 const StyledMain = styled.main`
     display: block;
     flex: 1 1 0%;
-    background-color: black;
+    background-color: #2F3136;
     overflow: auto;
     color: white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
+
     h1 {
         border: 1px solid white;
         font-size: 1.5rem;
